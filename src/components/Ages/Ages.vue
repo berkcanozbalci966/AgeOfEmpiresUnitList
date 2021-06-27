@@ -4,31 +4,28 @@
       v-for="(ageName, index) in ageList"
       :key="index"
       :ageInformation="{ ageName, index, selectedAge }"
-      @ageClick="setAge($event)"
+      @ageClick="changeSelectedAge($event)"
     />
   </div>
 </template>
 
 <script>
 import Age from "./Age.vue";
-import { mapState } from "vuex";
+import { mapState, mapMutations } from "vuex";
 export default {
   name: "Ages",
   components: { Age: Age },
-  data() {
-    return {
-      selectedAge: 0,
-    };
-  },
   computed: {
     ...mapState({
       ageList: (state) => state.Age.ageList,
+      selectedAge: (state) => state.Age.selectedAge,
     }),
   },
   methods: {
     setAge(selectedAgeIndex) {
       this.selectedAge = selectedAgeIndex;
     },
+    ...mapMutations("Age", ["changeSelectedAge"]),
   },
 };
 </script>

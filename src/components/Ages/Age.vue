@@ -1,6 +1,6 @@
 <template>
   <div
-    @click="$emit('ageClick', ageInformation.index)"
+    @click="$emit('ageClick', ageInformation.ageName)"
     :class="[isSelected ? 'active' : null]"
   >
     <span> {{ ageInformation.ageName }} </span>
@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     isSelected() {
-      return this.ageInformation.selectedAge === this.ageInformation.index
+      return this.ageInformation.selectedAge === this.ageInformation.ageName
         ? true
         : false;
     },

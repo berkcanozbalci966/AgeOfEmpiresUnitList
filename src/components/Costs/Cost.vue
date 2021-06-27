@@ -1,7 +1,7 @@
 <template>
   <div class="input-container">
     <div class="input-group">
-      <input type="checkbox" :id="costCategorie" />
+      <input v-model="isChecked" type="checkbox" :id="costCategorie" />
       <label :for="costCategorie" class="check-box"></label>
       <span>{{ costCategorie }} </span>
     </div>
@@ -31,15 +31,16 @@ export default {
   data() {
     return {
       coastRange: null,
-      f: "yes",
+      isChecked: false,
     };
   },
 
-  created() {
+  mounted() {
     this.coastRange = this.getUnitCostRange.min;
   },
   beforeUpdate() {
     console.log(this.coastRange);
+    console.log("isChecked", this.isChecked);
   },
 
   computed: {
