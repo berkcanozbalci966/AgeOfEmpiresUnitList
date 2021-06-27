@@ -21,6 +21,7 @@ export default {};
   justify-content: space-between;
   align-items: center;
   display: flex;
+  margin-bottom: 40px;
   #nav {
     a {
       color: #125d98;

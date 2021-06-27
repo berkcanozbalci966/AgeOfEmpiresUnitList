@@ -1,7 +1,9 @@
 import { createStore } from "vuex";
 
 export default createStore({
-  state: {},
+  state: {
+    ageList: ["All", "Dark", "Feudal", "Castle", "Imperial"],
+  },
   mutations: {},
   actions: {},
   modules: {},

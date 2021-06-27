@@ -2,6 +2,6 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import "@/assets/scss2/bootstrap-grid.scss";
+import "@/assets/scss/bootstrap-grid.scss";
 
 createApp(App).use(store).use(router).mount("#app");

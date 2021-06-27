@@ -10,13 +10,14 @@
 
 <script>
 import Age from "./Age.vue";
+import { mapState } from "vuex";
 export default {
   name: "Ages",
   components: { Age: Age },
-  data() {
-    return {
-      ageList: ["All", "Dark", "Feudal", "Castle", "Imperial"],
-    };
+  computed: {
+    ...mapState({
+      ageList: (state) => state.ageList,
+    }),
   },
 };
 </script>

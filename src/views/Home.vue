@@ -19,5 +19,8 @@ export default {
 .image-container {
   display: flex;
   justify-content: center;
+  img {
+    width: 100%;
+  }
 }
 </style>
