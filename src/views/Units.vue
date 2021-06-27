@@ -1,29 +1,23 @@
 <template>
   <div>
-    <div class="row">
-      <div class="col-md-2">
-        <h2>Test</h2>
-      </div>
-    </div>
-    <Ages />
+    <h1>Age List</h1>
+    <Ages style="margin-bottom: 40px" />
+    <h1>Cost Lists</h1>
+    <Costs />
   </div>
 </template>
 <script>
 import Ages from "@/components/Ages/Ages";
-import Units from "@/assets/age-of-empires-units";
+
+import Costs from "@/components/Costs/Costs";
 export default {
   components: {
-    Ages: Ages,
+    Ages,
+    Costs,
   },
-  created() {
-    console.log(Units);
-  },
-  computed: {
-    unitList() {
-      console.log(Units);
-      return Units;
-    },
-  },
+
+  computed: {},
+  methods: {},
 };
 </script>
 

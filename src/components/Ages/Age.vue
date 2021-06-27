@@ -1,6 +1,9 @@
 <template>
-  <div :class="[selected ? 'active' : null]">
-    <span> {{ ageInformation }} </span>
+  <div
+    @click="$emit('ageClick', ageInformation.index)"
+    :class="[isSelected ? 'active' : null]"
+  >
+    <span> {{ ageInformation.ageName }} </span>
   </div>
 </template>
 
@@ -9,8 +12,8 @@ export default {
   name: "Age",
   props: {
     ageInformation: {
-      type: String,
-      default: () => "",
+      type: Object,
+      default: () => {},
     },
   },
   data() {
@@ -18,13 +21,21 @@ export default {
       selected: false,
     };
   },
+  computed: {
+    isSelected() {
+      return this.ageInformation.selectedAge === this.ageInformation.index
+        ? true
+        : false;
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 div {
   border: 1px solid black;
-  padding: 4px 6px;
+  padding: 4px 10px;
+  transition: all 0.5s;
   &:hover {
     cursor: pointer;
   }
