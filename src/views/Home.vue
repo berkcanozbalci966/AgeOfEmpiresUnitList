@@ -1,18 +1,23 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="image-container">
+    <img :src="require('@/assets/img/ageofempires.jpg')" alt="" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
+  data() {
+    return {
+      value: 0,
+    };
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+</style>
