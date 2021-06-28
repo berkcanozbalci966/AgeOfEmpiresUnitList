@@ -22,6 +22,7 @@ export default createStore({
       namespaced: true,
       state: {
         allUnitJson: Units,
+        selectedCostOptions: [],
       },
       getters: {
         getUnitsByAge: (state) => (age) => {
@@ -30,21 +31,21 @@ export default createStore({
             : state.allUnitJson.units.filter((unit) => unit.age === age);
         },
 
-        getUnitByCostCategorie: (state) => (categorie) => {
-          console.log(categorie);
-          return state.allUnitJson.units.filter(
-            (unit) => unit.cost && unit.cost[categorie]
-          );
-        },
-        getUnitsCostRange: () => (unitList, categorie) => {
+        getUnitByCostCategory:
+          (state) =>
+          (category, unitList = state.allUnitJson.units) => {
+            return unitList.filter((unit) => unit.cost && unit.cost[category]);
+          },
+        getUnitsCostRange: () => (unitList, category) => {
           const sortedList = unitList.sort(
-            (a, b) => a.cost[categorie] - b.cost[categorie]
+            (a, b) => a.cost[category] - b.cost[category]
           );
           return {
-            min: sortedList[0].cost[categorie],
-            max: sortedList[sortedList.length - 1].cost[categorie],
+            min: sortedList[0].cost[category],
+            max: sortedList[sortedList.length - 1].cost[category],
           };
         },
+        // table format for table element row
         tableFormatter: () => (unitList) => {
           return unitList.map((unit) => {
             const formattedUnit = {
@@ -59,9 +60,20 @@ export default createStore({
                 .map((cost) => cost.replace(",", ":"))
                 .join(", ");
             }
-            console.log("rest", formattedUnit.cost);
             return formattedUnit;
           });
+        },
+      },
+      mutations: {
+        setCostOption: (state, payload) => {
+          if (!state.selectedCostOptions.includes(payload)) {
+            state.selectedCostOptions.push(payload);
+          } else {
+            state.selectedCostOptions.splice(
+              state.selectedCostOptions.indexOf(payload),
+              1
+            );
+          }
         },
       },
     },

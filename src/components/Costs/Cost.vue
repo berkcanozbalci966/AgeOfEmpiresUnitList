@@ -1,9 +1,14 @@
 <template>
   <div class="input-container">
     <div class="input-group">
-      <input v-model="isChecked" type="checkbox" :id="costCategorie" />
-      <label :for="costCategorie" class="check-box"></label>
-      <span>{{ costCategorie }} </span>
+      <input
+        @click="setCostOption(costcategory)"
+        v-model="isChecked"
+        type="checkbox"
+        :id="costcategory"
+      />
+      <label :for="costcategory" class="check-box"></label>
+      <span>{{ costcategory }} </span>
     </div>
     <div class="input-group">
       <input
@@ -20,11 +25,11 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapMutations } from "vuex";
 export default {
   name: "Cost",
   props: {
-    costCategorie: {
+    costcategory: {
       type: String,
     },
   },
@@ -38,24 +43,21 @@ export default {
   mounted() {
     this.coastRange = this.getUnitCostRange.min;
   },
-  beforeUpdate() {
-    console.log(this.coastRange);
-    console.log("isChecked", this.isChecked);
-  },
-
+  beforeUpdate() {},
   computed: {
     getUnitCostRange() {
       return this.getUnitsCostRange(
-        this.getUnitByCostCategorie(this.costCategorie),
-        this.costCategorie
+        this.getUnitByCostCategory(this.costcategory),
+        this.costcategory
       );
     },
-    ...mapGetters("Units", ["getUnitByCostCategorie", "getUnitsCostRange"]),
+    ...mapGetters("Units", ["getUnitByCostCategory", "getUnitsCostRange"]),
   },
   methods: {
     calculateStartRange() {
       return this.getUnitCostRange.min;
     },
+    ...mapMutations("Units", ["setCostOption"]),
   },
 };
 </script>

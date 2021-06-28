@@ -15,9 +15,7 @@ export default {
       default: () => ({}),
     },
   },
-  mounted() {
-    console.log(this.unitInfo);
-  },
+  mounted() {},
 };
 </script>
 

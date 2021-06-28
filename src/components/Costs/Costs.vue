@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Cost costCategorie="Gold" />
-    <Cost costCategorie="Wood" />
-    <Cost costCategorie="Food" />
+    <Cost costcategory="Gold" />
+    <Cost costcategory="Wood" />
+    <Cost costcategory="Food" />
   </div>
 </template>
 
@@ -14,7 +14,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-div {
-}
-</style>
+<style lang="scss" scoped></style>
