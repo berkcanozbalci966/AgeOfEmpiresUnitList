@@ -19,36 +19,18 @@ export default {
     Table,
   },
   mounted() {},
-
   computed: {
     unitFormatedData() {
       return this.tableFormatter(this.filteredUnitsData);
     },
     filteredUnitsData() {
-      if (this.selectedCostOptions.length === 0) {
-        return this.getUnitsByAge(this.selectedAge);
-      } else if (this.selectedCostOptions.length === 1) {
-        return this.getUnitByCostCategory(
-          this.selectedCostOptions[0],
-          this.getUnitsByAge(this.selectedAge)
-        );
-      } else if (this.selectedCostOptions.length === 2) {
-        // getCostCategory callback getCostCategory method
-        return this.getUnitByCostCategory(
-          this.selectedCostOptions[1],
-          this.getUnitByCostCategory(
-            this.selectedCostOptions[0],
-            this.getUnitsByAge(this.selectedAge)
-          )
-        );
-      } else {
-        return this.getUnitsByAge(this.selectedAge);
-      }
+      return this.unitsExportToTable(this.selectedAge);
     },
     ...mapGetters("Units", [
       "tableFormatter",
       "getUnitsByAge",
       "getUnitByCostCategory",
+      "unitsExportToTable",
     ]),
     ...mapState({
       unitState: (state) => state.Units.allUnitJson.units,

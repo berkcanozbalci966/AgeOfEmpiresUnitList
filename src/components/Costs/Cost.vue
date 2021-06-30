@@ -2,7 +2,7 @@
   <div class="input-container">
     <div class="input-group">
       <input
-        @click="setCostOption(costcategory)"
+        @click="rangeToggler"
         v-model="isChecked"
         type="checkbox"
         :id="costcategory"
@@ -15,17 +15,19 @@
         type="range"
         :min="getUnitCostRange.min"
         :max="getUnitCostRange.max"
-        v-model="coastRange"
+        :disabled="!isChecked ? true : false"
+        v-model="costRange"
+        @mouseup="log"
         name=""
         id=""
       />
     </div>
-    <span> {{ `${coastRange} - ${getUnitCostRange.max}` }} </span>
+    <span> {{ `${costRange} - ${getUnitCostRange.max}` }} </span>
   </div>
 </template>
 
 <script>
-import { mapGetters, mapMutations } from "vuex";
+import { mapGetters, mapMutations, mapState } from "vuex";
 export default {
   name: "Cost",
   props: {
@@ -35,29 +37,45 @@ export default {
   },
   data() {
     return {
-      coastRange: null,
+      costRange: 0,
       isChecked: false,
     };
   },
 
-  mounted() {
-    this.coastRange = this.getUnitCostRange.min;
+  created() {
+    this.costRange = this.getUnitCostRange.min;
   },
-  beforeUpdate() {},
   computed: {
     getUnitCostRange() {
       return this.getUnitsCostRange(
-        this.getUnitByCostCategory(this.costcategory),
+        this.getUnitByCostCategory({
+          costcategory: this.costcategory,
+          costRange: this.costRange,
+        }),
         this.costcategory
       );
     },
+    ...mapState({
+      selectedCostOptions: (state) => state.Units.selectedCostOptions,
+    }),
     ...mapGetters("Units", ["getUnitByCostCategory", "getUnitsCostRange"]),
   },
   methods: {
-    calculateStartRange() {
-      return this.getUnitCostRange.min;
+    log() {
+      console.log("triggered");
+      this.changeCost({
+        costcategory: this.costcategory,
+        costRange: Number(this.costRange),
+      });
     },
-    ...mapMutations("Units", ["setCostOption"]),
+    rangeToggler() {
+      this.isChecked = !this.isChecked;
+      this.setCostOption({
+        costcategory: this.costcategory,
+        costRange: this.costRange,
+      });
+    },
+    ...mapMutations("Units", ["setCostOption", "changeCost"]),
   },
 };
 </script>
