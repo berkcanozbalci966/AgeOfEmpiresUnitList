@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Age Render correctly 1`] = `
+<div>
+  <div class="active" data-test="age"><span>All</span></div>
+  <div class="" data-test="age"><span>Dark</span></div>
+  <div class="" data-test="age"><span>Feudal</span></div>
+  <div class="" data-test="age"><span>Castle</span></div>
+  <div class="" data-test="age"><span>Imperial</span></div>
+</div>
+`;

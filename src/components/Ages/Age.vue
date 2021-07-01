@@ -2,6 +2,7 @@
   <div
     @click="$emit('ageClick', ageInformation.ageName)"
     :class="[isSelected ? 'active' : null]"
+    data-test="age"
   >
     <span> {{ ageInformation.ageName }} </span>
   </div>
