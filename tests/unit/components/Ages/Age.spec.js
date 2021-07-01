@@ -44,7 +44,7 @@ describe("Age", () => {
 
     expect(component.classes("active")).toBe(true);
   });
-  it("Click & emit", async () => {
+  it("Click after emit", async () => {
     const component = shallowMount(Age, {
       global: {
         plugins: [store],

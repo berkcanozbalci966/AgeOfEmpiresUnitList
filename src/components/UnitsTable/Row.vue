@@ -1,5 +1,5 @@
 <template>
-  <tr @click="routerNavigate()">
+  <tr data-test="unitsrow" @click="routerNavigate()">
     <td>{{ unitInfo.id }}</td>
     <td>{{ unitInfo.name }}</td>
     <td>{{ unitInfo.age }}</td>
@@ -19,7 +19,7 @@ export default {
   methods: {
     routerNavigate() {
       this.$router.push({
-        name: "UnitDetail",
+        name: "Unit Detail",
         params: { id: this.unitInfo.id },
       });
     },

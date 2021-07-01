@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cost Render correctly 1`] = `
+<div class="input-container">
+  <div class="input-group"><input type="checkbox" id="Wood"><label for="Wood" class="check-box"></label><span>Wood</span></div>
+  <div class="input-group"><input type="range" min="15" max="225" disabled="" name="Wood" id="Wood"></div><span>15 - 225</span>
+</div>
+`;

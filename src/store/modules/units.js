@@ -33,7 +33,6 @@ const getters = {
   getUnitsByCost: () => (payload) => {
     const { unitList, selectedOption } = payload;
     const { costcategory, costRange } = selectedOption;
-    console.log(typeof costRange);
     return unitList.filter((unit) => unit.cost[costcategory] >= costRange);
   },
   // table format for table element row
@@ -133,10 +132,8 @@ const mutations = {
         1
       );
     }
-    console.log(state.selectedCostOptions);
   },
   changeCost: (state, payload) => {
-    console.log(state.selectedCostOptions, payload);
     state.selectedCostOptions.find(
       (unit) => unit.costcategory === payload.costcategory
     ).costRange = payload.costRange;

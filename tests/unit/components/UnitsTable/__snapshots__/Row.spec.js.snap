@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row Render correctly 1`] = `
+<tr data-test="unitsrow">
+  <td>1</td>
+  <td>Test</td>
+  <td>Dark</td>
+  <td>50 food 50 gold</td>
+</tr>
+`;

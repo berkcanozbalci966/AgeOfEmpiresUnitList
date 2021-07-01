@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Costs Render correctly 1`] = `
+<div>
+  <cost-stub costcategory="Gold"></cost-stub>
+  <cost-stub costcategory="Wood"></cost-stub>
+  <cost-stub costcategory="Food"></cost-stub>
+</div>
+`;

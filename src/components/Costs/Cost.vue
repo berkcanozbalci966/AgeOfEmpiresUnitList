@@ -18,8 +18,8 @@
         :disabled="!isChecked ? true : false"
         v-model="costRange"
         @mouseup="log"
-        name=""
-        id=""
+        :name="costcategory"
+        :id="costcategory"
       />
     </div>
     <span> {{ `${costRange} - ${getUnitCostRange.max}` }} </span>
