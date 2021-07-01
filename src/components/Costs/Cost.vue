@@ -62,7 +62,6 @@ export default {
   },
   methods: {
     log() {
-      console.log("triggered");
       this.changeCost({
         costcategory: this.costcategory,
         costRange: Number(this.costRange),

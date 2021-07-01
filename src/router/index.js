@@ -12,6 +12,11 @@ const routes = [
     name: "Units",
     component: () => import("../views/Units.vue"),
   },
+  {
+    path: "/unitdetail",
+    name: "UnitDetail",
+    component: () => import("../views/UnitDetail.vue"),
+  },
 ];
 
 const router = createRouter({

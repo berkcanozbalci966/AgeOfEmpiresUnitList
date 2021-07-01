@@ -1,5 +1,5 @@
 <template>
-  <tr>
+  <tr @click="routerNavigate()">
     <td>{{ unitInfo.id }}</td>
     <td>{{ unitInfo.name }}</td>
     <td>{{ unitInfo.age }}</td>
@@ -16,7 +16,22 @@ export default {
     },
   },
   mounted() {},
+  methods: {
+    routerNavigate() {
+      this.$router.push({
+        name: "UnitDetail",
+        params: { id: this.unitInfo.id },
+      });
+    },
+  },
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+tr {
+  &:hover {
+    cursor: pointer;
+    background-color: "red";
+  }
+}
+</style>

@@ -20,6 +20,7 @@ const getters = {
       }
       return unitList.filter((unit) => unit.cost && unit.cost[costcategory]);
     },
+
   getUnitsCostRange: () => (unitList, category) => {
     const sortedList = unitList.sort(
       (a, b) => a.cost[category] - b.cost[category]
@@ -109,6 +110,9 @@ const getters = {
     });
     return tripleOption;
   },
+  getUnitByID: (state) => (id) => {
+    return state.allUnitJson.units.filter((unit) => unit.id === Number(id))[0];
+  },
 };
 
 const actions = {};
@@ -136,6 +140,9 @@ const mutations = {
     state.selectedCostOptions.find(
       (unit) => unit.costcategory === payload.costcategory
     ).costRange = payload.costRange;
+  },
+  clearFilters: (state) => {
+    state.selectedCostOptions = [];
   },
 };
 

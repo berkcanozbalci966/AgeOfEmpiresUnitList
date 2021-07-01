@@ -10,15 +10,18 @@
 <script>
 import Ages from "@/components/Ages/Ages";
 import Costs from "@/components/Costs/Costs";
-import Table from "@/components/Table/Table";
-import { mapState, mapGetters } from "vuex";
+import Table from "@/components/UnitsTable/Table";
+import { mapState, mapGetters, mapMutations } from "vuex";
 export default {
   components: {
     Ages,
     Costs,
     Table,
   },
-  mounted() {},
+  mounted() {
+    this.clearFilters();
+    this.changeSelectedAge("All");
+  },
   computed: {
     unitFormatedData() {
       return this.tableFormatter(this.filteredUnitsData);
@@ -38,7 +41,10 @@ export default {
       selectedAge: (state) => state.Age.selectedAge,
     }),
   },
-  methods: {},
+  methods: {
+    ...mapMutations("Age", ["changeSelectedAge"]),
+    ...mapMutations("Units", ["clearFilters"]),
+  },
 };
 </script>
 

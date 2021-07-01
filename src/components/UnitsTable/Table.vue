@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Row from "@/components/Table/Row";
+import Row from "@/components/UnitsTable/Row";
 export default {
   components: {
     Row,
@@ -40,11 +40,14 @@ table {
   margin-top: 50px;
   width: 100%;
   border-collapse: collapse;
-  td,
-  th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+  tr {
+    cursor: unset;
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
   }
 }
 </style>
