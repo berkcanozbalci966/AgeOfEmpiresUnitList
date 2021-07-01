@@ -3,7 +3,7 @@ import Vuex from "vuex";
 import Ages from "../../../../src/components/Ages/Ages";
 import AgeModule from "../../../../src/store/modules/age";
 
-describe("Age", () => {
+describe("Ages", () => {
   let store;
 
   beforeEach(() => {
@@ -14,7 +14,7 @@ describe("Age", () => {
     });
   });
 
-  it("Age list render", () => {
+  it("list render", () => {
     const component = mount(Ages, {
       global: {
         plugins: [store],

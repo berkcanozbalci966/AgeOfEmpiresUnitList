@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Age Render correctly 1`] = `<div class="" data-test="age"><span>Test</span></div>`;
