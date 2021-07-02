@@ -5,15 +5,27 @@
       <h1>{{ $router.currentRoute.value.name }}</h1>
 
       <div id="nav">
-        <router-link to="/">Home</router-link>
-        <router-link to="/units">Units</router-link>
+        <router-link :class="currentRoute === 'Home' ? 'active' : null" to="/"
+          >Home</router-link
+        >
+        <router-link
+          :class="currentRoute === 'Units' ? 'active' : null"
+          to="/units"
+          >Units</router-link
+        >
       </div>
     </div>
     <router-view />
   </div>
 </template>
 <script>
-export default {};
+export default {
+  computed: {
+    currentRoute() {
+      return this.$router.currentRoute.value.name;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -29,6 +41,9 @@ export default {};
       margin-right: 5px;
       font-size: 18px;
       letter-spacing: 0.5px;
+      &.active {
+        font-weight: 700;
+      }
       &:last-child {
         margin-right: 0;
       }

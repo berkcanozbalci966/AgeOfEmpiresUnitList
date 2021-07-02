@@ -1,0 +1,667 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Units View Render width route param Correctly 1`] = `
+<div>
+  <h1>Age Options</h1>
+  <div style="margin-bottom: 40px;">
+    <div class="active" data-test="age"><span>All</span></div>
+    <div class="" data-test="age"><span>Dark</span></div>
+    <div class="" data-test="age"><span>Feudal</span></div>
+    <div class="" data-test="age"><span>Castle</span></div>
+    <div class="" data-test="age"><span>Imperial</span></div>
+  </div>
+  <h1>Cost Options</h1>
+  <div>
+    <div class="input-container">
+      <div class="input-group"><input type="checkbox" id="Gold"><label for="Gold" class="check-box"></label><span>Gold</span></div>
+      <div class="input-group"><input type="range" min="20" max="225" disabled="" name="Gold" id="Gold"></div><span>20 - 225</span>
+    </div>
+    <div class="input-container">
+      <div class="input-group"><input type="checkbox" id="Wood"><label for="Wood" class="check-box"></label><span>Wood</span></div>
+      <div class="input-group"><input type="range" min="15" max="225" disabled="" name="Wood" id="Wood"></div><span>15 - 225</span>
+    </div>
+    <div class="input-container">
+      <div class="input-group"><input type="checkbox" id="Food"><label for="Food" class="check-box"></label><span>Food</span></div>
+      <div class="input-group"><input type="range" min="20" max="200" disabled="" name="Food" id="Food"></div><span>20 - 200</span>
+    </div>
+  </div>
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>age</th>
+          <th>cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-test="unitsrow">
+          <td>1</td>
+          <td>Archer</td>
+          <td>Feudal</td>
+          <td>Wood:25, Gold:45</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>2</td>
+          <td>Crossbowman</td>
+          <td>Castle</td>
+          <td>Wood:25, Gold:45</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>3</td>
+          <td>Arbalest</td>
+          <td>Imperial</td>
+          <td>Wood:25, Gold:45</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>4</td>
+          <td>Cavalry Archer</td>
+          <td>Castle</td>
+          <td>Wood:40, Gold:70</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>5</td>
+          <td>Heavy Cavalry Archer</td>
+          <td>Imperial</td>
+          <td>Wood:40, Gold:70</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>6</td>
+          <td>Hand Cannoneer</td>
+          <td>Imperial</td>
+          <td>Food:45, Gold:50</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>7</td>
+          <td>Skirmisher</td>
+          <td>Feudal</td>
+          <td>Food:25, Wood:35</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>8</td>
+          <td>Elite Skirmisher</td>
+          <td>Castle</td>
+          <td>Food:25, Wood:35</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>9</td>
+          <td>Eagle Warrior</td>
+          <td>Dark</td>
+          <td></td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>10</td>
+          <td>Eagle Warrior</td>
+          <td>Castle</td>
+          <td>Food:20, Gold:50</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>11</td>
+          <td>Elite Eagle Warrior</td>
+          <td>Imperial</td>
+          <td>Food:20, Gold:50</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>12</td>
+          <td>Spearman</td>
+          <td>Feudal</td>
+          <td>Food:35, Wood:15</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>13</td>
+          <td>Pikeman</td>
+          <td>Castle</td>
+          <td>Food:35, Wood:25</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>14</td>
+          <td>Halberdier</td>
+          <td>Imperial</td>
+          <td>Food:35, Wood:25</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>15</td>
+          <td>Militia</td>
+          <td>Dark</td>
+          <td>Food:60, Gold:20</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>16</td>
+          <td>Man At Arms</td>
+          <td>Feudal</td>
+          <td>Food:60, Gold:20</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>17</td>
+          <td>Long Swordman</td>
+          <td>Castle</td>
+          <td>Food:60, Gold:20</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>18</td>
+          <td>Two Handed Swordsman</td>
+          <td>Imperial</td>
+          <td>Food:60, Gold:20</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>19</td>
+          <td>Champion</td>
+          <td>Imperial</td>
+          <td>Food:60, Gold:20</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>20</td>
+          <td>King</td>
+          <td>Dark</td>
+          <td>Food:50</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>21</td>
+          <td>Petard</td>
+          <td>Castle</td>
+          <td>Food:80, Gold:20</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>22</td>
+          <td>Trebuchet</td>
+          <td>Imperial</td>
+          <td>Wood:200, Gold:200</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>23</td>
+          <td>Trebuchet (packed)</td>
+          <td>Imperial</td>
+          <td>Wood:200, Gold:200</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>24</td>
+          <td>Cannon Galleon</td>
+          <td>Imperial</td>
+          <td>Wood:200, Gold:150</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>25</td>
+          <td>Elite Cannon Galleon</td>
+          <td>Imperial</td>
+          <td>Wood:200, Gold:150</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>26</td>
+          <td>Demolition Ship</td>
+          <td>Castle</td>
+          <td>Wood:70, Gold:50</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>27</td>
+          <td>Heavy Demolition Ship</td>
+          <td>Imperial</td>
+          <td>Wood:70, Gold:50</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>28</td>
+          <td>Fire Ship</td>
+          <td>Castle</td>
+          <td>Wood:75, Gold:45</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>29</td>
+          <td>Fast Fire Ship</td>
+          <td>Imperial</td>
+          <td>Wood:75, Gold:45</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>30</td>
+          <td>Galley</td>
+          <td>Feudal</td>
+          <td>Wood:90, Gold:30</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>31</td>
+          <td>War Galley</td>
+          <td>Castle</td>
+          <td>Wood:90, Gold:30</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>32</td>
+          <td>Galleon</td>
+          <td>Imperial</td>
+          <td>Wood:90, Gold:30</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>33</td>
+          <td>Longboat</td>
+          <td>Castle</td>
+          <td>Wood:80, Gold:40</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>34</td>
+          <td>Elite Longboat</td>
+          <td>Imperial</td>
+          <td>Wood:80, Gold:40</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>35</td>
+          <td>Fishing Ship</td>
+          <td>Dark</td>
+          <td>Wood:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>36</td>
+          <td>Trade Cog</td>
+          <td>Feudal</td>
+          <td>Wood:100, Gold:50</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>37</td>
+          <td>Transport Ship</td>
+          <td>Feudal</td>
+          <td>Wood:125</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>38</td>
+          <td>Turtle Ship</td>
+          <td>Castle</td>
+          <td>Wood:200, Gold:200</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>39</td>
+          <td>Elite Turtle Ship</td>
+          <td>Imperial</td>
+          <td>Wood:200, Gold:200</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>40</td>
+          <td>Wild Boar</td>
+          <td>Dark</td>
+          <td></td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>41</td>
+          <td>Deer</td>
+          <td>Dark</td>
+          <td></td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>42</td>
+          <td>Horse</td>
+          <td>Dark</td>
+          <td></td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>43</td>
+          <td>Sheep</td>
+          <td>Dark</td>
+          <td></td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>44</td>
+          <td>Turkey</td>
+          <td>Dark</td>
+          <td></td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>45</td>
+          <td>Wolf</td>
+          <td>Dark</td>
+          <td></td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>46</td>
+          <td>Jaguar</td>
+          <td>Dark</td>
+          <td></td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>47</td>
+          <td>Trade Cart</td>
+          <td>Feudal</td>
+          <td>Wood:100, Gold:50</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>48</td>
+          <td>Missionary</td>
+          <td>Castle</td>
+          <td>Gold:100</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>49</td>
+          <td>Monk</td>
+          <td>Castle</td>
+          <td>Gold:100</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>50</td>
+          <td>Bombard Cannon</td>
+          <td>Imperial</td>
+          <td>Wood:225, Gold:225</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>51</td>
+          <td>Mangonel</td>
+          <td>Castle</td>
+          <td>Wood:160, Gold:135</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>52</td>
+          <td>Onager</td>
+          <td>Imperial</td>
+          <td>Wood:160, Gold:135</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>53</td>
+          <td>Siege Onager</td>
+          <td>Imperial</td>
+          <td>Wood:160, Gold:135</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>54</td>
+          <td>Battering Ram</td>
+          <td>Castle</td>
+          <td>Wood:160, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>55</td>
+          <td>Capped Ram</td>
+          <td>Imperial</td>
+          <td>Wood:160, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>56</td>
+          <td>Siege Ram</td>
+          <td>Imperial</td>
+          <td>Wood:160, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>57</td>
+          <td>Scorpion</td>
+          <td>Castle</td>
+          <td>Wood:75, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>58</td>
+          <td>Heavy Scorpion</td>
+          <td>Imperial</td>
+          <td>Wood:75, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>59</td>
+          <td>Camel</td>
+          <td>Castle</td>
+          <td>Food:55, Gold:60</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>60</td>
+          <td>Heavy Camel</td>
+          <td>Imperial</td>
+          <td>Food:55, Gold:60</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>61</td>
+          <td>Knight</td>
+          <td>Castle</td>
+          <td>Food:60, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>62</td>
+          <td>Cavalier</td>
+          <td>Imperial</td>
+          <td>Food:60, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>63</td>
+          <td>Paladin</td>
+          <td>Imperial</td>
+          <td>Food:60, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>64</td>
+          <td>Scout Cavalry</td>
+          <td>Dark</td>
+          <td></td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>65</td>
+          <td>Scout Cavalry</td>
+          <td>Feudal</td>
+          <td>Food:80</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>66</td>
+          <td>Light Cavalry</td>
+          <td>Castle</td>
+          <td>Food:80</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>67</td>
+          <td>Hussar</td>
+          <td>Imperial</td>
+          <td>Food:80</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>68</td>
+          <td>Villager</td>
+          <td>Dark</td>
+          <td>Food:50</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>69</td>
+          <td>Berserk</td>
+          <td>Castle</td>
+          <td>Food:65, Gold:25</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>70</td>
+          <td>Elite Berserk</td>
+          <td>Imperial</td>
+          <td>Food:65, Gold:25</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>71</td>
+          <td>Cataphract</td>
+          <td>Castle</td>
+          <td>Food:70, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>72</td>
+          <td>Elite Cataphract</td>
+          <td>Imperial</td>
+          <td>Food:70, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>73</td>
+          <td>Chu Ko Nu</td>
+          <td>Castle</td>
+          <td>Wood:40, Gold:35</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>74</td>
+          <td>Elite Chu Ko Nu</td>
+          <td>Imperial</td>
+          <td>Wood:40, Gold:35</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>75</td>
+          <td>Conquistador</td>
+          <td>Castle</td>
+          <td>Food:60, Gold:70</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>76</td>
+          <td>Elite Conquistador</td>
+          <td>Imperial</td>
+          <td>Food:60, Gold:70</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>77</td>
+          <td>Huskarl</td>
+          <td>Castle</td>
+          <td>Food:52, Gold:26</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>78</td>
+          <td>Elite Huskarl</td>
+          <td>Imperial</td>
+          <td>Food:52, Gold:26</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>79</td>
+          <td>Jaguar Warrior</td>
+          <td>Castle</td>
+          <td>Food:60, Gold:30</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>80</td>
+          <td>Elite Jaguar Warrior</td>
+          <td>Castle</td>
+          <td>Food:60, Gold:30</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>81</td>
+          <td>Janissary</td>
+          <td>Castle</td>
+          <td>Food:60, Gold:55</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>82</td>
+          <td>Elite Janissary</td>
+          <td>Imperial</td>
+          <td>Food:60, Gold:55</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>83</td>
+          <td>Longbowman</td>
+          <td>Castle</td>
+          <td>Wood:35, Gold:40</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>84</td>
+          <td>Elite Longbowman</td>
+          <td>Imperial</td>
+          <td>Wood:35, Gold:40</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>85</td>
+          <td>Mameluke</td>
+          <td>Castle</td>
+          <td>Food:55, Gold:85</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>86</td>
+          <td>Elite Mameluke</td>
+          <td>Imperial</td>
+          <td>Food:55, Gold:85</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>87</td>
+          <td>Mangudai</td>
+          <td>Castle</td>
+          <td>Wood:55, Gold:65</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>88</td>
+          <td>Elite Mangudai</td>
+          <td>Imperial</td>
+          <td>Wood:55, Gold:65</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>89</td>
+          <td>Plumed Archer</td>
+          <td>Castle</td>
+          <td>Wood:37, Gold:37</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>90</td>
+          <td>Elite Plumed Archer</td>
+          <td>Castle</td>
+          <td>Wood:32, Gold:32</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>91</td>
+          <td>Samurai</td>
+          <td>Castle</td>
+          <td>Food:60, Gold:30</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>92</td>
+          <td>Elite Samurai</td>
+          <td>Imperial</td>
+          <td>Food:60, Gold:30</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>93</td>
+          <td>Tarkan</td>
+          <td>Castle</td>
+          <td>Food:60, Gold:60</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>94</td>
+          <td>Elite Tarkan</td>
+          <td>Castle</td>
+          <td>Food:60, Gold:60</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>95</td>
+          <td>Teutonic Knight</td>
+          <td>Castle</td>
+          <td>Food:85, Gold:40</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>96</td>
+          <td>Elite Teutonic Knight</td>
+          <td>Imperial</td>
+          <td>Food:85, Gold:40</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>97</td>
+          <td>Throwing Axeman</td>
+          <td>Castle</td>
+          <td>Food:55, Gold:25</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>98</td>
+          <td>Elite Throwing Axeman</td>
+          <td>Imperial</td>
+          <td>Food:55, Gold:25</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>99</td>
+          <td>War Elephant</td>
+          <td>Castle</td>
+          <td>Food:200, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>100</td>
+          <td>Elite War Elephant</td>
+          <td>Imperial</td>
+          <td>Food:200, Gold:75</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>101</td>
+          <td>War Wagon</td>
+          <td>Castle</td>
+          <td>Wood:120, Gold:60</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>102</td>
+          <td>Elite War Wagon</td>
+          <td>Imperial</td>
+          <td>Wood:120, Gold:60</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>103</td>
+          <td>Woad Raider</td>
+          <td>Castle</td>
+          <td>Food:65, Gold:25</td>
+        </tr>
+        <tr data-test="unitsrow">
+          <td>104</td>
+          <td>Elite Woad Raider</td>
+          <td>Imperial</td>
+          <td>Food:65, Gold:25</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

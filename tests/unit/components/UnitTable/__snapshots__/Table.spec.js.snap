@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit Detail Table Table render correctly 1`] = `
+<table>
+  <!--v-if-->
+  <tr>
+    <th scope="row">Name:</th>
+    <td>Test</td>
+  </tr>
+  <tr>
+    <th scope="row">Description:</th>
+    <td>This is test post</td>
+  </tr>
+  <tr>
+    <th scope="row">Min.Required Age:</th>
+    <td>Dark</td>
+  </tr>
+  <tr>
+    <th scope="row">Wood Cost:</th>
+    <td>25</td>
+  </tr>
+  <tr>
+    <th scope="row">Gold Cost:</th>
+    <td>45</td>
+  </tr>
+  <tr>
+    <th scope="row">Food Cost:</th>
+    <td>55</td>
+  </tr>
+  <tr>
+    <th scope="row">Build Time:</th>
+    <td>22</td>
+  </tr>
+  <tr>
+    <th scope="row">Reload Time:</th>
+    <td>33</td>
+  </tr>
+  <tr>
+    <th scope="row">Hit Points:</th>
+    <td>44</td>
+  </tr>
+  <tr>
+    <th scope="row">Attack:</th>
+    <td>55</td>
+  </tr>
+  <tr>
+    <th scope="row">Accuracy:</th>
+    <td>66</td>
+  </tr>
+</table>
+`;
+
+exports[`Unit Detail Table Table render correctly width empty fields 1`] = `
+<table>
+  <!--v-if-->
+  <tr>
+    <th scope="row">Name:</th>
+    <td>Test</td>
+  </tr>
+  <tr>
+    <th scope="row">Description:</th>
+    <td>This is test post</td>
+  </tr>
+  <tr>
+    <th scope="row">Min.Required Age:</th>
+    <td>Dark</td>
+  </tr>
+  <!--v-if-->
+  <tr>
+    <th scope="row">Build Time:</th>
+    <td>22</td>
+  </tr>
+  <tr>
+    <th scope="row">Reload Time:</th>
+    <td>33</td>
+  </tr>
+  <!--v-if-->
+  <!--v-if-->
+  <!--v-if-->
+</table>
+`;

@@ -16,20 +16,21 @@
       <th scope="row">Min.Required Age:</th>
       <td>{{ getUnitInformations.age }}</td>
     </tr>
+    <template v-if="getUnitInformations.cost">
+      <tr v-if="getUnitInformations.cost.Wood">
+        <th scope="row">Wood Cost:</th>
+        <td>{{ getUnitInformations.cost.Wood }}</td>
+      </tr>
+      <tr v-if="getUnitInformations.cost.Gold">
+        <th scope="row">Gold Cost:</th>
+        <td>{{ getUnitInformations.cost.Gold }}</td>
+      </tr>
 
-    <tr v-if="getUnitInformations.cost.Wood">
-      <th scope="row">Wood Cost:</th>
-      <td>{{ getUnitInformations.cost.Wood }}</td>
-    </tr>
-    <tr v-if="getUnitInformations.cost.Gold">
-      <th scope="row">Gold Cost:</th>
-      <td>{{ getUnitInformations.cost.Gold }}</td>
-    </tr>
-
-    <tr v-if="getUnitInformations.cost.Food">
-      <th scope="row">Food Cost:</th>
-      <td>{{ getUnitInformations.cost.Food }}</td>
-    </tr>
+      <tr v-if="getUnitInformations.cost.Food">
+        <th scope="row">Food Cost:</th>
+        <td>{{ getUnitInformations.cost.Food }}</td>
+      </tr>
+    </template>
 
     <tr v-if="getUnitInformations.build_time">
       <th scope="row">Build Time:</th>

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit Detail Render width route param Correctly 1`] = `
+<div>
+  <table>
+    <tr>
+      <th scope="row">ID:</th>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th scope="row">Name:</th>
+      <td>Arbalest</td>
+    </tr>
+    <tr>
+      <th scope="row">Description:</th>
+      <td>Upgraded crossbowman</td>
+    </tr>
+    <tr>
+      <th scope="row">Min.Required Age:</th>
+      <td>Imperial</td>
+    </tr>
+    <tr>
+      <th scope="row">Wood Cost:</th>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th scope="row">Gold Cost:</th>
+      <td>45</td>
+    </tr>
+    <!--v-if-->
+    <tr>
+      <th scope="row">Build Time:</th>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th scope="row">Reload Time:</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th scope="row">Hit Points:</th>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th scope="row">Attack:</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th scope="row">Accuracy:</th>
+      <td>90%</td>
+    </tr>
+  </table>
+</div>
+`;
